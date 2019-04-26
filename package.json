@@ -1,0 +1,31 @@
+{
+  "name": "react-native-gantt-chart",
+  "version": "1.0.3",
+  "description": "React Native Gantt Chart Library",
+  "keywords": [
+    "react",
+    "native",
+    "gantt",
+    "chart",
+    "svg"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Çağatay Çiftçi <im.cgtycftc@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 15.x",
+    "react-native": ">= 0.47.x"
+  },
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.1"
+  },
+  "dependencies": {
+    "d3": "^5.9.2",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react-native-svg": "^9.4.0"
+  }
+}
