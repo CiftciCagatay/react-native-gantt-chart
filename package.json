@@ -1,6 +1,6 @@
 {
   "name": "react-native-gantt-chart",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "React Native Gantt Chart Library",
   "keywords": [
     "react",
@@ -13,8 +13,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiftciCagatay/react-native-gantt-chart.git"
+  },
   "author": "Çağatay Çiftçi <im.cgtycftc@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CiftciCagatay/react-native-gantt-chart/issues"
+  },
+  "homepage": "https://github.com/CiftciCagatay/react-native-gantt-chart#readme",
   "peerDependencies": {
     "react": ">= 15.x",
     "react-native": ">= 0.47.x"
