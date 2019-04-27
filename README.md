@@ -23,9 +23,9 @@ class Test extends Component {
     
     this.state = {
       tasks: [
-        { _id: "1", name: "Task 1", "start": new Date(2018, 0, 1), "end": new Date(2018, 0, 5) },
-        { _id: "2", name: "Task 2", "start": new Date(2018, 0, 3), "end": new Date(2018, 0, 4) },
-        { _id: "3", name: "Task 3", "start": new Date(2018, 0, 5), "end": new Date(2018, 0, 8) }
+        { _id: "1", name: "Task 1", "start": new Date(2018, 0, 1), "end": new Date(2018, 0, 5), progress: 0.25 },
+        { _id: "2", name: "Task 2", "start": new Date(2018, 0, 3), "end": new Date(2018, 0, 4), progress: 1 },
+        { _id: "3", name: "Task 3", "start": new Date(2018, 0, 5), "end": new Date(2018, 0, 8), progress: 0.5 }
         ]
     }
   }
@@ -68,6 +68,7 @@ export default Test
 |---|---|-|-----|
 |_id|String|x|Unique key for each data item|
 |name|String||Name to show on task bar|
+|progress|Float (0 to 1)||Completed part of task as percentage|
 |start|Date|x|Start date of task|
 |end|Date|x|End date of task|
 

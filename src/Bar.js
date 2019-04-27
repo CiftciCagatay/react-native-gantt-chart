@@ -20,6 +20,7 @@ const Bar = props => {
   const x = scale(startVal)
   const y = barHeight * index + padding * (index + 1)
   const taskDuration = scale(endVal) - scale(startVal)
+  const taskProgress = task.progress ? task.progress : 0
 
   return (
     <G onPressIn={() => onPress(task)}>
@@ -27,16 +28,16 @@ const Bar = props => {
         x={x}
         y={y}
         height={barHeight}
-        width={taskDuration * task.progress}
+        width={taskDuration * taskProgress}
         strokeWidth={2}
         fill={primaryColor}
       />
 
       <Rect
-        x={x + taskDuration * task.progress}
+        x={x + taskDuration * taskProgress}
         y={y}
         height={barHeight}
-        width={taskDuration - taskDuration * task.progress}
+        width={taskDuration - taskDuration * taskProgress}
         strokeWidth={2}
         fill={secondaryColor}
       />

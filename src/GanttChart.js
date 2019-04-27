@@ -156,6 +156,7 @@ GanttChart.propTypes = {
   data: PropTypes.arrayOf({
     _id: PropTypes.string.isRequired,
     name: PropTypes.string,
+    progress: PropTypes.number,
     start: PropTypes.instanceOf(Date).isRequired,
     end: PropTypes.instanceOf(Date).isRequired
   }).isRequired,
