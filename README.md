@@ -35,7 +35,6 @@ class Test extends Component {
         <GanttChart 
           data={this.state.tasks}
           numberOfTicks={6}
-          barLineHeight={280}
           onPressTask={task => alert(task.name)}
           gridMin={new Date(2018, 0, 1).getTime()}
           gridMax={new Date(2018, 0, 20).getTime()}
@@ -68,7 +67,6 @@ export default Test
 |Prop|Type|Required|Description|
 |---|---|-|-----|
 |_id|String|x|Unique key for each data item|
-|barLineHeight|number||This will manage Axis height|
 |name|String||Name to show on task bar|
 |progress|Float (0 to 1)||Completed part of task as percentage|
 |start|Date|x|Start date of task|
