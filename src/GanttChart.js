@@ -80,7 +80,7 @@ class GanttChart extends PureComponent {
   }
 
   render() {
-    const { data, numberOfTicks, onPressTask, colors } = this.props
+    const { data, numberOfTicks, onPressTask, colors, barLineHeight } = this.props
     const {
       barColorPrimary,
       barColorSecondary,
@@ -105,7 +105,7 @@ class GanttChart extends PureComponent {
       >
         <Svg height={height} width={width}>
           <Axis
-            height={height}
+            height={barLineHeight}
             width={width}
             x={0}
             y={timeAxisHeight}
